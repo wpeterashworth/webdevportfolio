@@ -29,7 +29,7 @@ footer {
     border-width: 7px;
 }
 
-nav a {
+nav a, a {
     text-decoration: none;
     color: var(--accent-color2);
     font-weight: bold;
@@ -37,7 +37,7 @@ nav a {
     display: block;
 }
 
-nav a:hover {
+nav a:hover, a:hover {
     color: var(--accent-color);
 }
 
@@ -48,22 +48,4 @@ img {
 img:hover {
     box-shadow: 0 0 25px #333;
     transition: .25s;
-}
-
-.aboutMe p {
-    padding: 40px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-.experience p {
-    padding: 30px;
-    padding-top: 0px;
-}
-
-.soft-skills,
-.hard-skills,
-.weaknesses,
-.aboutMe {
-    padding-bottom: 15px;
 }
