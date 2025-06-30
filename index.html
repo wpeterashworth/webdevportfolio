@@ -1,42 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W. Peter Ashworth's Web Project Portfolio</title>
-    <script src="scripts/dates.js" defer></script>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="/styles/base.css">
+    <link rel="stylesheet" type="text/css" href="/styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <div id="content">
-        <header>
-            <h1>W. Peter Ashworth's Web Portfolio</h1>
-            <img src="images/photo_of_me.JPG" alt="self portrait">
-            <nav>
-                <a href="https://wpeterashworth.github.io/webdevportfolio/images/Resume.pdf">My Resume (PDF)</a>
-            </nav>
-        </header>
-        <main>
-            <section class="school-projects">
-                <h2>School Projects</h2>
-                <a href="">Web Frontend Development II</a>
-                <a href="">Advanced CSS</a>
-            </section>
-            <section class="personal-projects">
-                <h2>Personal Projects</h2>
-                <a href="https://wpeterashworth.github.io/just4fun/lotr_fan_page">Lord of The Rings API project</a>
-            </section>
-        </main>
-        <footer>
-            <p>Last Modified:</p>
-            <p id="lastModified"></p>
-            <p>W. Peter Ashworth | Web Projects </p>
-            <p id="date"></p>
-        </footer>
-    </div>
-</body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#home" class="logo">PeterAshworth</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Hi, I'm Peter Ashworth</h1>
+            <p>Full-Stack Web Developer passionate about creating awesome websites</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-content">
+                <div class="about-image fade-in">
+                    <img src="images/photo_of_me.JPG" alt="Profile Picture" class="profile-pic">
+                </div>
+                <div class="about-text fade-in">
+                    <p>Welcome to my portfolio! I'm currently a sophmore at Brigham Young University - Idaho, studying web design and development, with a focus on the backend. I love to create user-friendly websites and applications. I love bringing creative ideas to life through code.</p>
+                    <p>When I'm not coding, you can find me playing violin or basketball. I'm always eager to learn new technologies and take on challenging projects that push my skills to the next level.</p>
+                    <a href="images/Resume.pdf" class="resume-link" target="_blank">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title fade-in">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-item fade-in">
+                    <h3>Frontend</h3>
+                    <p>HTML5, CSS3, JavaScript, Responsive Design</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <h3>Backend</h3>
+                    <p>Node.js, Express.js, RESTful APIs</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <h3>Database</h3>
+                    <p>MySQL, PostgreSQL, MongoDB, Firebase</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <h3>Tools & Other</h3>
+                    <p>Git, AWS, Sass</p>
+                </div>
+                <div class="skill-item fade-in">
+                    <h3>Soft Skills</h3>
+                    <p>Communicator, Writer, Problem Solving, Eager to Learn</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <!-- <div class="project-image">Project Screenshot</div> -->
+                    <div class="project-content">
+                        <h3>KnowNotes</h3>
+                        <p>For this project, I used the PERN framework, but without using React.js. I wanted to create an application that would allow students to share their notes and ideas easily and publicly on a website that's not too complex, but also very functional. This project was made outside of class.</p>
+                        <a href="https://notesharing-production.up.railway.app/" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>I'm always interested in new opportunities and exciting projects. Let's connect!</p>
+            <div class="contact-info">
+                <div class="contact-item fade-in">
+                    <h3>Email</h3>
+                    <a href="mailto:williampeterashworth@gmail.com">williampeterashworth@gmail.com</a>
+                </div>
+                <div class="contact-item fade-in">
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/peter-ashworth-077291316" target="_blank">linkedin.com/in/peter-ashworth-077291316</a>
+                </div>
+                <div class="contact-item fade-in">
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/wpeterashworth" target="_blank">github.com/wpeterashworth</a>
+                </div>
+                <div class="contact-item fade-in">
+                    <h3>Location</h3>
+                    <p>Rexburg, Idaho</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 W. Peter Ashworth. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+</body>
 </html>
