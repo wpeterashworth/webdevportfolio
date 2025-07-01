@@ -150,6 +150,14 @@ nav {
     position: relative;
 }
 
+.last-section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #87ceeb;
+    position: relative;
+}
+
 .section-title::after {
     content: '';
     display: block;
