@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "peterashworth-webportfolio",
     "public": "public",
     "ignore": [
       "firebase.json",
