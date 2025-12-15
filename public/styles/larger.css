@@ -51,4 +51,8 @@
     .experience {
         border: outset;
     }
+
+    #menu {
+        display: none;
+    }
 }
