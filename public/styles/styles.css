@@ -86,6 +86,7 @@ nav {
     color: white;
     position: relative;
     overflow: hidden;
+    margin-top: 50px;
 }
 
 .hero::before {
